@@ -62,6 +62,9 @@ const Routers = function ({ history, app }) {
       path: '/post',
       models: () => [import('./models/post')],
       component: () => import('./routes/post/'),
+    }, {
+      path: '/deckgl',
+      component: () => import('./routes/webgl/deckgl'),
     },
   ]
 

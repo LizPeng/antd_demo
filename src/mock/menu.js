@@ -154,6 +154,13 @@ let database = [
     name: 'Test Navigation22',
     route: '/navigation/navigation2/navigation2',
   },
+  {
+    id: '8',
+    bpid: '1',
+    name: 'deckgl',
+    icon: 'code-o',
+    route: '/deckgl',
+  },
 ]
 
 module.exports = {
