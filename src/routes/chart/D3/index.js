@@ -1,7 +1,7 @@
 import React from 'react'
 import { Radio } from 'antd'
 import { Page } from 'components'
-import ReChartsComponent from './ReChartsComponent'
+import D3Component from './D3Component'
 import styles from './index.less'
 
 const RadioGroup = Radio.Group
@@ -42,7 +42,7 @@ class Chart extends React.Component {
     return (<Page inner>
       <RadioGroup options={chartList} defaultValue="pieChart" onChange={this.handleRadioGroupChange} />
       <div className={styles.chart}>
-        <ReChartsComponent type={this.state.type} />
+        <D3Component type={this.state.type} />
       </div>
     </Page>)
   }

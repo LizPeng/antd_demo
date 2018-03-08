@@ -59,6 +59,9 @@ const Routers = function ({ history, app }) {
       path: '/chart/Recharts',
       component: () => import('./routes/chart/Recharts/'),
     }, {
+      path: '/chart/d3',
+      component: () => import('./routes/chart/D3/'),
+    }, {
       path: '/post',
       models: () => [import('./models/post')],
       component: () => import('./routes/post/'),
